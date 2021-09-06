@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
       int n = isNumber(argv[1]);
       if(n < 0)
       {
-            fprintf(stderr, "%s non è negativo oppure non è un numero.\n", argv[1]);
+            fprintf(stderr, "%s è negativo oppure non è un numero.\n", argv[1]);
             return -1;
       }
 
