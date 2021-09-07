@@ -25,4 +25,4 @@ Wc/word_count : Wc/word_count.c Utils/utils.o
 	$(CC) $(CFLAGS) $^ -o $@
 
 clean :
-	-rm -f $(OBJS) $(EXE) *~ core Utils/utils.o
+	-rm -f $(OBJS) $(EXE) *~ core
