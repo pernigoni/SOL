@@ -2,9 +2,9 @@ CC = gcc
 
 CFLAGS += -g -pedantic -Wall -I "../Utils"
 
-EXE = Passwd/passwd Matrix/read_matrix Matrix/write_matrix word_count
+EXE = Passwd/passwd Matrix/read_matrix Matrix/write_matrix Wc/word_count
 
-OBJS = Passwd/passwd.o Matrix/read_matrix.o Matrix/write_matrix.o word_count.o
+OBJS = Passwd/passwd.o Matrix/read_matrix.o Matrix/write_matrix.o Wc/word_count.o
 
 .PHONY: clean
 
