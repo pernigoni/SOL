@@ -2,6 +2,9 @@
 
 #define _UTILS_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
 #define FOPEN_ERR(file, path, mode) \
       if((file = fopen(path, mode)) == NULL)                                                    \
       {                                                                                         \
