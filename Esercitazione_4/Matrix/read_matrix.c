@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {    
       if(argc != 4)
       {
-            fprintf(stderr, "Usa: %s nome-file.dat nome-file.txt\n", argv[0]);
+            fprintf(stderr, "Usa: %s nome-file.dat nome-file.txt numero\n", argv[0]);
             return -1;
       }
       
