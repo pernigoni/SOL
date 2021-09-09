@@ -13,7 +13,7 @@
       name: nome della syscall.
       value: dove sarà salvato il risultato della syscall.
       system_call: syscall con tutti i suoi parametri.
-      error_message: messaggio di errore.
+      error_msg: messaggio di errore.
 */
 #define SYSCALL(name, value, system_call, error_msg, ...)    	\
       if((value = system_call) == -1)                             \
