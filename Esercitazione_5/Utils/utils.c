@@ -6,8 +6,8 @@ void print_errors(char *msg, ...)
 		*err = calloc(strlen(begin) + strlen(msg) + MAX_ERROR_MSG_SIZE, sizeof(char));
 	if(err == NULL)
 	{
-		perror("malloc");
-		fprintf(stderr, "malloc failed in print_errors\n");
+		perror("calloc");
+		fprintf(stderr, "calloc failed in print_errors\n");
 		return ;
 	}
 	
