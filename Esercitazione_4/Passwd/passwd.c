@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../Utils/utils.h"
-
 #define MAX_LEN 101
 
 int main(int argc, char *argv[])
