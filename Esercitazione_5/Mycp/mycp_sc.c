@@ -13,10 +13,8 @@ int main(int argc, char *argv[])
             return -1;
       }
 
-      int buf_size;
-      if(argc == 3)
-            buf_size = BUF_SIZE;
-      else if(argc == 4)
+      int buf_size = BUF_SIZE;
+      if(argc == 4)
       {
             buf_size = isNumber(argv[3]);
             if(buf_size <= 0)
