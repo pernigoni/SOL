@@ -197,6 +197,6 @@ int main(int argc, char *argv[])
       if(pthread_join(sighandler_thread, NULL) != 0)
             perror("pthread_join");
       
-      unlink(SOCKNAME); // clueanup
+      unlink(SOCKNAME); // cleanup
       return 0;
 }
