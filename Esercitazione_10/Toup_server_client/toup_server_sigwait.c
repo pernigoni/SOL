@@ -17,8 +17,8 @@ int end = 0, listen_fd; // invece di essere globali andrebbero passate al thread
 
 typedef struct msg // messaggio
 {
-	int len;
-	char *str;
+      int len;
+      char *str;
 } msg_t;
 
 void toup(char *str) // converte tutti i carattere minuscoli in caratteri maiuscoli
@@ -31,7 +31,7 @@ void toup(char *str) // converte tutti i carattere minuscoli in caratteri maiusc
       }        
 }
 
-void *sighandler_fun(void *arg)
+void* sighandler_fun(void *arg)
 {
       assert(arg);
       sigset_t *mask = (sigset_t *)arg;
@@ -68,7 +68,7 @@ void *sighandler_fun(void *arg)
       return NULL;
 }
 
-void *thread_fun(void *arg) 
+void* thread_fun(void *arg) 
 {
       assert(arg);
       long conn_fd = (long)arg;
