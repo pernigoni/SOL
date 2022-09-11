@@ -30,7 +30,6 @@ void safe_pthread_mutex_unlock(pthread_mutex_t *mtx)
 static int incr_x(int incr) // una funzione con dentro un mutex difficilmente può essere resa rientrante
 {
       static int x = 0;
-      static pthread_mutex_t mtx = PTHREAD_MUTEX_INITIALIZER;
 
       safe_pthread_mutex_lock(&mtx);
       int ret = (x += incr);
