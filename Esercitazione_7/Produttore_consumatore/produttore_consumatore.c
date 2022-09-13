@@ -31,11 +31,12 @@ void* producer(void *arg)
             buf[0] = produce(&seed);
             n_elem++;
 
+            int b = buf[0];
+            
             safe_pthread_cond_signal(&empty);
-
             safe_pthread_mutex_unlock(&mtx);
 
-            printf("Produttore  : %d\n", buf[0]);
+            printf("Produttore  : %d\n", b);
             fflush(stdout);
             //sleep(1);
       }
@@ -58,11 +59,12 @@ void* consumer(void *arg)
 
             n_elem--;
 
+            int b = buf[0];
+            
             safe_pthread_cond_signal(&full); 
-
             safe_pthread_mutex_unlock(&mtx);
             
-            printf("Consumatore : %d\n", buf[0]);
+            printf("Consumatore : %d\n", b);
             fflush(stdout);
             //sleep(1);
       }
